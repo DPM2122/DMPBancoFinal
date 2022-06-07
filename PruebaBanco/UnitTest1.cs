@@ -7,7 +7,10 @@ namespace PruebaBanco
 {
     [TestClass]
     public class UnitTest1
+
     {
+        public const string CantidadMayorQueSaldo = "La cant no puede ser > que el saldo";
+        public const string CantidadMenorCero = "La cant no puede ser menor que 0";
         [TestMethod]
         public void PruebaDatosCorrectos()
         { 
@@ -60,19 +63,16 @@ namespace PruebaBanco
             double saldo = 11.99;
             double cantidad = -15.55;
             DMPBanco Prueba = new DMPBanco("Mr. Bryan Walton", saldo);
+
             try
             {
                 Prueba.Debit(cantidad);
             }
             catch(ArgumentOutOfRangeException e)
             {
-                StringAssert.Contains(e.Message, "La cantidad es errónea");
-                return;
+              
+                    StringAssert.Contains(e.Message, CantidadMenorCero);         
             }
-            Assert.Fail("Deberia haber fallado");
-
-
-
         }
     }
 }

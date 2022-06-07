@@ -30,19 +30,22 @@ namespace DMPBANCOFINAL
         {
             get { return mSaldo; }
         }
+        public const string CantidadMayorQueSaldo = "La cant no puede ser > que el saldo";
+        public const string CantidadMenorCero = "La cant no puede ser menor que 0";
         public void Debit(double cantidad)
         {
+          
             if (mCongelada)
             {
                 throw new Exception("Account frozen");
             }
             if (cantidad > mSaldo)
             {
-                throw new ArgumentOutOfRangeException("cantidad");
+                throw new ArgumentOutOfRangeException("cantidad", cantidad, CantidadMayorQueSaldo);
             }
             if (cantidad < 0)
             {
-                throw new ArgumentOutOfRangeException("cantidad");
+                throw new ArgumentOutOfRangeException("cantidad", cantidad, CantidadMenorCero);
             }
 
             mSaldo -= cantidad; // código intencionadamente incorrecto
