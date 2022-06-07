@@ -1,0 +1,6 @@
+C:\Users\desmp_3bz1040\Source\Repos\DMPBancoFinal\DMPBANCOFINAL\bin\Debug\DMPBANCOFINAL.dll
+C:\Users\desmp_3bz1040\Source\Repos\DMPBancoFinal\DMPBANCOFINAL\bin\Debug\DMPBANCOFINAL.pdb
+C:\Users\desmp_3bz1040\Source\Repos\DMPBancoFinal\DMPBANCOFINAL\obj\Debug\DMPBANCOFINAL.csproj.AssemblyReference.cache
+C:\Users\desmp_3bz1040\Source\Repos\DMPBancoFinal\DMPBANCOFINAL\obj\Debug\DMPBANCOFINAL.csproj.CoreCompileInputs.cache
+C:\Users\desmp_3bz1040\Source\Repos\DMPBancoFinal\DMPBANCOFINAL\obj\Debug\DMPBANCOFINAL.dll
+C:\Users\desmp_3bz1040\Source\Repos\DMPBancoFinal\DMPBANCOFINAL\obj\Debug\DMPBANCOFINAL.pdb
