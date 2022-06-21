@@ -19,7 +19,7 @@ namespace PruebaBanco
             Prueba.Debit(cantidad);
             // afirmación de la prueba (valor esperado Vs. Valor obtenido)
     
-            Assert.AreEqual(esperado, Prueba.Saldo, 0.01,  "Error");
+            Assert.AreEqual(esperado, Prueba.Saldo,  "Error");
         }
 
         [TestMethod]
@@ -55,7 +55,7 @@ namespace PruebaBanco
 
 
         [TestMethod]
-        public void  PruebaContidadErronea()
+        public void  PruebaCantidadErroneaDos()
         {
             double saldo = 11.99;
             double cantidad = -15.55;
